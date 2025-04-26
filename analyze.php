@@ -36,7 +36,7 @@ echo json_encode([
 
 function isFakeName($name) {
     // Fake if contains many non-English letters
-    if (preg_match('/[ùáA-Za-zÀ-ÖØ-öø-ÿ^\x20-\x7E]/', $name)) {  // Non-ASCII characters
+    if (preg_match('/^[A-Za-z ]+$/', $name)) {  // Non-ASCII characters
         return true;
     }
 
