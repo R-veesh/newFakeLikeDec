@@ -16,9 +16,9 @@ function analyzeNames() {
         document.getElementById('result').innerHTML = `
             <h3>Results</h3>
             <p>Total Likes: ${data.total}</p>
-            <p>Real Likes: ${data.real}</p>
-            <p>Fake Likes: ${data.fake}</p>
-            <h4>Fake Names Detected:</h4>
+            <p>Fake Likes: ${data.real}</p>
+            <p>Real Likes: ${data.fake}</p>
+            <h4>Real Names Detected:</h4>
             <ul>${data.fakeNames.map(name => `<li>${name}</li>`).join('')}</ul>
         `;
     })
